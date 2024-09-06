@@ -96,7 +96,7 @@ fun Anasayfa() {
             modifier = Modifier
                 .fillMaxSize()
                 .padding(paddingValues),
-            verticalArrangement = Arrangement.spacedBy(8.dp), // Adjust vertical spacing here
+            verticalArrangement = Arrangement.spacedBy(8.dp), 
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
@@ -154,13 +154,13 @@ fun Anasayfa() {
 
             Box(
                 modifier = Modifier
-                    .weight(1f) // Use weight to fill remaining space
+                    .weight(1f)
                     .padding(8.dp)
             ) {
                 LazyVerticalGrid(
                     columns = GridCells.Fixed(2),
-                    verticalArrangement = Arrangement.spacedBy(8.dp), // Adjust vertical spacing here
-                    contentPadding = PaddingValues(0.dp) // Adjust content padding to reduce extra space
+                    verticalArrangement = Arrangement.spacedBy(8.dp),
+                    contentPadding = PaddingValues(0.dp)
                 ) {
                     items(
                         count = menuler.count(),
@@ -169,7 +169,7 @@ fun Anasayfa() {
                             Card(
                                 shape = RoundedCornerShape(8.dp),
                                 modifier = Modifier
-                                    .padding(4.dp) // Reduce padding here
+                                    .padding(4.dp)
                                     .fillMaxWidth()
                                     .height(110.dp)
                                     .background(Color.White)
@@ -198,7 +198,7 @@ fun Anasayfa() {
                 shape = RoundedCornerShape(8.dp),
                 modifier = Modifier
                     .padding(end = 8.dp, start = 8.dp)
-                    .height(100.dp) // Ensure this height matches your requirements
+                    .height(100.dp)
             ) {
                 Box(
                     modifier = Modifier
@@ -208,7 +208,7 @@ fun Anasayfa() {
                         painter = painterResource(id = R.drawable.mion),
                         contentDescription = "",
                         modifier = Modifier.fillMaxSize(),
-                        contentScale = ContentScale.Crop // Ensures the image fits well
+                        contentScale = ContentScale.Crop
                     )
                 }
             }
